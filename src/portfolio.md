@@ -5,7 +5,7 @@ title: 档案主页
 icon: house
 welcome: 👋 你好，我是
 name: 菲莉娅
-avatar: /Stella_Philia_HD.png
+avatar: /assets/image/Stella_Philia_HD.png
 titles:
   - 如果我成为人类的话……
   - 就能拯救所有人了……
@@ -29,6 +29,8 @@ footer: false
 
 ---
 
-阅读更多：[菲莉娅(星之终途)](https://zh.moegirl.org.cn/菲莉娅(星之终途))
+阅读更多：[菲莉娅(星之终途)](<https://zh.moegirl.org.cn/菲莉娅(星之终途)>)
 
 本文引自[萌娘百科](https://zh.moegirl.org.cn)，文字内容默认使用《知识共享 署名-非商业性使用-相同方式共享 3.0 中国大陆》协议。
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1990185049&auto=1&height=66"></iframe>

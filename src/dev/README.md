@@ -1,6 +1,6 @@
 ---
 title: 开发指南
-icon: laptop-code
+icon: code
 order: 1
 category:
   - 开发指南

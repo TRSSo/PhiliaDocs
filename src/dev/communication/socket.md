@@ -1,6 +1,6 @@
 ---
 title: Socket 协议
-icon: laptop-code
+icon: code
 order: 2
 category:
   - 开发指南
@@ -9,7 +9,30 @@ category:
 
 使用 Socket 协议作为默认通信协议。
 
-## 本地进程间通信路径定义
+## 通信路径定义
 
-- 在 Unix 上：`\0项目路径`，如 `␀/home/user/project`
-- 在 Windows 上：`\\?\pipe\项目路径`，如 `\\?\pipe\D:\project`
+客户端连接时提供 `项目路径`+`应用协议`
+
+- 在 Unix 上：`/home/user/project/philia`
+- 在 Windows 上：`D:\project\philia`
+
+实际连接地址：
+
+- `\0项目路径/应用协议`: `␀/home/user/project/philia`
+- `\\?\pipe\项目路径\应用协议`: `\\?\pipe\D:\project\philia`
+
+## 编码长度
+
+由于 TCP 粘包问题，Socket 协议规定了编码长度，拼接在编码数据前。
+
+实际发送数据：长度`n(UInt32BE)`+数据`n字节`
+
+因此一个数据包的最大长度为`4GB(2³²-1)`，如果发送的数据包长度超过 4GB，会分片处理，规则：
+
+1. 单块：长度`4294967295(2³²-1)`+数据`4GB(2³²-1)`，最后一块：长度`n(UInt32BE)`+`数据 n字节`
+2. 接收端收到时检测到长度`4GB(2³²-1)`，则认为数据包已分片，并继续读取数据
+3. 直到读取到长度非`4GB(2³²-1)`，则数据包已接收完成，将所有接收数据拼接并解码
+
+::: important
+如果数据正好为`4GB(2³²-1)`的整数倍，则最后一块为 长度`0(UInt32BE)`无数据，请确保能正确处理。
+:::

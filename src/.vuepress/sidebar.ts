@@ -1,4 +1,4 @@
-import { sidebar } from "vuepress-theme-hope";
+import { sidebar } from "vuepress-theme-hope"
 
 export default sidebar({
   "/": [
@@ -12,11 +12,11 @@ export default sidebar({
     },
     {
       text: "开发指南",
-      icon: "laptop-code",
+      icon: "code",
       prefix: "dev/",
       children: "structure",
       collapsible: true,
     },
     "portfolio",
   ],
-});
+})

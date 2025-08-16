@@ -1,5 +1,5 @@
-import { defineUserConfig } from "vuepress";
-import theme from "./theme.js";
+import { defineUserConfig } from "vuepress"
+import theme from "./theme.js"
 
 export default defineUserConfig({
   base: "/",
@@ -7,6 +7,5 @@ export default defineUserConfig({
   title: "菲莉娅 Philia",
   description: "通用聊天应用接口标准",
   theme,
-  // 和 PWA 一起启用
-  // shouldPrefetch: false,
-});
+  shouldPrefetch: false,
+})
