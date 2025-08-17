@@ -29,13 +29,13 @@ category:
 
 @tab 示例
 
-```json
+```js
 {
-  "id": "01JSRMV07VY3B4H227FYWEMKM9",
-  "code": 0,
-  "name": "getUserInfo",
-  "data": {
-    "id": "1234567890"
+  id: "01JSRMV07VY3B4H227FYWEMKM9",
+  code: 0,
+  name: "getUserInfo",
+  data: {
+    id: "1234567890"
   }
 }
 ```
@@ -57,13 +57,13 @@ category:
 
 @tab 示例
 
-```json
+```js
 {
-  "id": "01JSRMV07VY3B4H227FYWEMKM9",
-  "code": 1,
-  "data": {
-    "id": "1234567890",
-    "name": "匿名用户"
+  id: "01JSRMV07VY3B4H227FYWEMKM9",
+  code: 1,
+  data: {
+    id: "1234567890",
+    name: "匿名用户"
   }
 }
 ```
@@ -85,10 +85,10 @@ category:
 
 @tab 示例
 
-```json
+```js
 {
-  "id": "01JSRMV07VY3B4H227FYWEMKM9",
-  "code": 2
+  id: "01JSRMV07VY3B4H227FYWEMKM9",
+  code: 2
 }
 ```
 
@@ -112,14 +112,14 @@ category:
 
 @tab 示例
 
-```json
+```js
 {
-  "id": "01JSRMV07VY3B4H227FYWEMKM9",
-  "code": 3,
-  "data": {
-    "name": "NotFoundError",
-    "message": "用户不存在",
-    "error": "NotFoundError: 用户不存在\n    at makeError (/root/Philia/src/util/common.ts:12:24)"
+  id: "01JSRMV07VY3B4H227FYWEMKM9",
+  code: 3,
+  data: {
+    name: "NotFoundError",
+    message: "用户不存在",
+    error: "NotFoundError: 用户不存在\n    at makeError (/root/Philia/src/util/common.ts:12:24)"
   }
 }
 ```

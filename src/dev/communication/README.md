@@ -25,13 +25,13 @@ category:
 
 @tab 示例
 
-```json
+```js
 {
-  "id": "01JSRN5WPSWXW7P6EHP8Q65FGB",
-  "name": "Client",
-  "version": 1,
-  "encode": ["MsgPack", "CBOR", "V8Serializer", "JSON"],
-  "verify": ["None", "CRC32", "MD5", "SHA256", "SHA3-512", "ZSTD", "GZIP"]
+  id: "01JSRN5WPSWXW7P6EHP8Q65FGB",
+  name: "Client",
+  version: 1,
+  encode: ["MsgPack", "CBOR", "V8Serializer", "JSON"],
+  verify: ["None", "CRC32", "MD5", "SHA256", "SHA3-512", "ZSTD", "GZIP"]
 }
 ```
 

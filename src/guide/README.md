@@ -1,16 +1,9 @@
 ---
 title: 使用指南
 icon: lightbulb
+order: 1
+category:
+  - 使用指南
 ---
 
-## 功能亮点
-
-### Bar
-
-- [baz](bar/baz.md)
-- ...
-
-### Foo
-
-- [ray](foo/ray.md)
-- ...
+<Catalog />

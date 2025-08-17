@@ -317,5 +317,5 @@ highlights:
         link: https://theme-hope.vuejs.press/zh/guide/advanced/pwa.html
 
 copyright: 版权所有 © <a href="https://github.com/TimeRainStarSky" target="_blank">TimeRainStarSky</a> 2025-至今
-footer: 由 <a href="https://github.com/TRSSo" target="_blank">TRSSo</a> 开发 | LGPL-3 协议
+footer: 由 <a href="https://github.com/TRSSo" target="_blank">TRSSo</a> 开发 | LGPL-3.0 协议
 ---
