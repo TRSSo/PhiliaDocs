@@ -1,0 +1,4 @@
+User-agent:*
+Disallow:
+
+Sitemap: https://pg.trss.me/sitemap.xml
