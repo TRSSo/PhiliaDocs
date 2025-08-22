@@ -1,4 +1,5 @@
 ---
+dir: { order: 3 }
 title: 事件
 icon: code
 order: 1

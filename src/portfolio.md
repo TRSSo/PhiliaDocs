@@ -5,7 +5,7 @@ title: 档案主页
 icon: house
 welcome: 👋 你好，我是
 name: 菲莉娅
-avatar: /assets/image/Stella_Philia_HD.png
+avatar: /assets/image/bs1_ph01_base01.webp
 titles:
   - 如果我成为人类的话……
   - 就能拯救所有人了……

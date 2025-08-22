@@ -1,4 +1,5 @@
 ---
+dir: { order: 3 }
 title: 项目管理器
 icon: lightbulb
 order: 1

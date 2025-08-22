@@ -1,4 +1,5 @@
 ---
+dir: { order: 6 }
 title: 应用协议
 icon: code
 order: 1

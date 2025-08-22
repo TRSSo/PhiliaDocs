@@ -1,4 +1,5 @@
 ---
+dir: { order: 4 }
 title: API
 icon: code
 order: 1

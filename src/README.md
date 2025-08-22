@@ -2,13 +2,15 @@
 home: true
 icon: house
 title: 项目主页
-heroImage: https://theme-hope-assets.vuejs.press/logo.svg
+heroImage: /assets/image/FRM_0505a.webp
 bgImage: https://theme-hope-assets.vuejs.press/bg/6-light.svg
 bgImageDark: https://theme-hope-assets.vuejs.press/bg/6-dark.svg
 bgImageStyle:
   background-attachment: fixed
 heroText: 菲莉娅 Philia
+heroTitle: 其实这是月咏不是菲莉娅
 tagline: 通用聊天应用接口标准及 TypeScript 实现文档
+
 actions:
   - text: 使用指南
     icon: lightbulb
@@ -19,6 +21,24 @@ actions:
     icon: code
     link: ./dev/
 
-copyright: 版权所有 © <a href="https://github.com/TimeRainStarSky" target="_blank">TimeRainStarSky</a> 2025-至今
-footer: 由 <a href="https://github.com/TRSSo" target="_blank">TRSSo</a> 开发 | LGPL-3.0 协议
+highlights:
+  - header: '<div id="月咏" style="height:100vw;opacity:0%">其实这是月咏不是菲莉娅</div>'
+    bgImage: /assets/image/ea06_01.webp
+    bgImageDark: /assets/image/ea06_02.webp
+    bgImageStyle:
+      background-size: 100%
 ---
+
+<script>
+export default {
+  mounted() {
+    const div = document.getElementById("月咏")
+    div.title = div.textContent
+    for (const i of [
+      ...document.getElementsByClassName("vp-hero-image"),
+      ...document.getElementsByClassName("vp-nav-logo"),
+    ])
+      i.title = div.textContent
+  },
+}
+</script>

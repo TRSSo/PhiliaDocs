@@ -1,4 +1,5 @@
 ---
+dir: { order: 2 }
 title: 结构体
 icon: code
 order: 1

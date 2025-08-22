@@ -13,13 +13,23 @@ category:
 
 客户端连接时提供 `项目路径`+`应用协议`
 
-- 在 Unix 上：`/home/user/project/philia`
-- 在 Windows 上：`D:\project\philia`
+- Linux: `\0项目路径/应用协议`
 
-实际连接地址：
+```
+␀/home/user/project/philia
+```
 
-- `\0项目路径/应用协议`: `␀/home/user/project/philia`
-- `\\?\pipe\项目路径\应用协议`: `\\?\pipe\D:\project\philia`
+- Windows: `\\?\pipe\项目路径\应用协议`
+
+```
+\\?\pipe\D:\project\philia
+```
+
+- 其他如 macOS 保持原样
+
+```
+/home/user/project/philia
+```
 
 ## 编码长度
 

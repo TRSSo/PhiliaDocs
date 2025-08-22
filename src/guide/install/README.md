@@ -1,7 +1,8 @@
 ---
+dir: { order: 2 }
 title: 安装指南
 icon: lightbulb
-order: 2
+order: 1
 category:
   - 使用指南
 ---
