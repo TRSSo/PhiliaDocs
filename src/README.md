@@ -33,8 +33,8 @@ highlights:
 export default {
   mounted() {
     const div = document.getElementById("月咏")
-    div.title = div.textContent
     for (const i of [
+      div,
       ...document.getElementsByClassName("vp-hero-image"),
       ...document.getElementsByClassName("vp-nav-logo"),
     ])
