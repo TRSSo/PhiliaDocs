@@ -31,9 +31,11 @@ category:
 /home/user/project/philia
 ```
 
+- 连接到远程主机，通过 `tcp://host:port` 打开 TCP 连接
+
 ## 编码长度
 
-由于 TCP 粘包问题，Socket 协议规定了编码长度，拼接在编码数据前。
+由于 Socket 粘包问题，协议规定了编码长度，拼接在编码数据前。
 
 实际发送数据：长度`n(UInt32BE)`+数据`n字节`
 
