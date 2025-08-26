@@ -11,19 +11,23 @@ category:
 
 ## 通信路径定义
 
-客户端连接时提供 `项目路径`+`应用协议`
+客户端连接时提供`项目路径`+`应用协议`
 
-- Linux: `\0项目路径/应用协议`
+- Linux:`\0项目路径/应用协议`
 
 ```
 ␀/home/user/project/philia
 ```
 
-- Windows: `\\?\pipe\项目路径\应用协议`
+- Windows:`\\?\pipe\项目路径\应用协议`
 
 ```
 \\?\pipe\D:\project\philia
 ```
+
+::: important
+Windows 已经支持 UDS，但 Node.js 尚未支持，我们计划在 Node.js 支持后迁移到 UDS 以确保平台统一性，以及 UDS 性能比命名管道更高。
+:::
 
 - 其他如 macOS 保持原样
 
@@ -31,7 +35,7 @@ category:
 /home/user/project/philia
 ```
 
-- 连接到远程主机，通过 `tcp://host:port` 打开 TCP 连接
+- 连接到远程主机，通过`tcp://host:port`打开 TCP 连接
 
 ## 编码长度
 

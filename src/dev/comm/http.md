@@ -17,9 +17,9 @@ HTTP 协议仅可单向请求服务端，请勿调用需反向请求客户端的
 
 请求的 API 名作为请求路径，不需要请求参数的 API 可用 GET 方法，否则使用 POST。
 
-POST 支持的编码格式为：[JSON](https://json.org) 和 [MsgPack](https://msgpack.org)，并默认使用 `JSON`。
+POST 支持的编码格式为：[JSON](https://json.org) 和 [MsgPack](https://msgpack.org)，并默认使用`JSON`。
 
-使用 MsgPack 时需加请求头：`Content-Type: application/vnd.msgpack`
+使用 MsgPack 时需加请求头:`Content-Type: application/vnd.msgpack`
 
 ### 请求 URL 参数
 
@@ -47,4 +47,4 @@ POST 请求压缩需加请求头：[Content-Encoding](https://developer.mozilla.
 协议没有规定必须支持压缩，请先检查服务端支持的压缩算法，在响应头：[Accept-Encoding](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Reference/Headers/Accept-Encoding)
 :::
 
-响应的压缩格式按请求的 `Content-Encoding` `Accept-Encoding` 从前往后匹配服务端支持的压缩格式，若使用了压缩格式，则会写在响应头 `Content-Encoding`，若无则不压缩。
+响应的压缩格式按请求的 `Content-Encoding` `Accept-Encoding` 从前往后匹配服务端支持的压缩格式，若使用了压缩格式，则会写在响应头`Content-Encoding`，若无则不压缩。
