@@ -31,7 +31,7 @@ category:
   id: "01JSRN5WPSWXW7P6EHP8Q65FGB",
   name: "Client",
   version: 1,
-  encode: ["MsgPack", "CBOR", "V8Serializer", "JSON"],
+  encode: ["MsgPack", "V8Serializer", "JSON"],
   verify: ["None", "CRC32", "MD5", "SHA256", "SHA3-512", "ZSTD", "GZIP"]
 }
 ```
@@ -46,7 +46,7 @@ category:
 
 TypeScript 实现支持的编码格式（按优先级排序）：
 
-[MsgPack](https://msgpack.org) [CBOR](https://cbor.io) [V8Serializer](https://nodejs.org/api/v8.html) [JSON](https://json.org)
+[MsgPack](https://msgpack.org) [V8Serializer](https://nodejs.org/api/v8.html) [JSON](https://json.org)
 
 ## 校验格式
 

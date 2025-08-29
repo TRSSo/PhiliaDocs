@@ -9,7 +9,7 @@ category:
 
 ## 环境安装
 
-1. [Node.js](https://nodejs.org) 安装 https://nodejs.org/zh-cn/download
+1. [Node.js](https://nodejs.org) 安装 https://nodejs.org/zh-cn/download/current
 
 ::: important
 由于使用了最新特性，请安装 v24 以上版本。
