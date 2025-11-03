@@ -7,6 +7,22 @@ category:
   - 使用指南
 ---
 
+使用项目建议选择安装程序安装，开发请使用手动安装。
+
+## 安装程序
+
+::: tabs#program
+
+@tab Windows
+
+[GitHub 下载](https://github.com/TRSSo/Philia-Windows-Installer/releases) [GitCode 下载](https://gitcode.com/TRSSo/Philia-Windows-Installer/releases)
+
+@tab Linux
+
+::svg-spinners:ring-resize:: 开发中
+
+:::
+
 ## 环境安装
 
 1. [Node.js](https://nodejs.org) 安装 https://nodejs.org/zh-cn/download/current
@@ -29,10 +45,34 @@ npm i -g pnpm
 
 ::: code-tabs#install
 
-@tab 使用
+@tab GitHub（国外推荐）
 
 ```sh
 git clone -b lib --depth 1 https://github.com/TRSSo/Philia
+cd Philia
+pnpm i -P
+```
+
+@tab Gitee（国内推荐）
+
+```sh
+git clone -b lib --depth 1 https://gitee.com/TRSSo/Philia
+cd Philia
+pnpm i -P
+```
+
+@tab GitLab
+
+```sh
+git clone -b lib --depth 1 https://gitlab.com/TRSSo/Philia
+cd Philia
+pnpm i -P
+```
+
+@tab GitCode
+
+```sh
+git clone -b lib --depth 1 https://gitcode.com/TRSSo/Philia
 cd Philia
 pnpm i -P
 ```
